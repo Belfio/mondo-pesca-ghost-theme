@@ -1,5 +1,5 @@
 {
-  "name": "mondoPesca",
+  "name": "mondo-pesca",
   "description": "A Ghost theme per Mondo Pesca",
   "version": "1.0.0",
   "private": true,
@@ -81,7 +81,7 @@
       },
       "email_signup_text": {
         "type": "text",
-        "default": "Don't miss out on the latest news. Sign up now to get access to the library of members-only articles."
+        "default": "Non perderti le ultime news di pesca e nautica in Sardegna , solo su Mondo Pesca."
       },
       "footer_text": {
         "type": "text"
