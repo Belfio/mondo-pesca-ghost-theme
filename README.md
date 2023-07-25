@@ -1,5 +1,16 @@
 # Headline
 
+## ToDo
+
+1. Mobile burger header is white and logo is white
+1. Under header space to put ads gif
+1. Add space on the right to add other ads
+1. Bottone in alto a dx iscriviti va messo bianco
+1. Immagine di babbo va messa qulla giusta
+1. Iscrizione di federico
+1. Aggiungere i TAG agli articoli vecchi
+1. Sostituire i valori sbagliati nel testo per accenti e apostrofi
+
 Headline is a [Ghost](https://github.com/TryGhost/Ghost) theme built from the ground up for local news. While it can be used for any purpose, the theme takes a thoughtful approach to displaying large amounts of content across various areas of coverage. Headline adapts to your content by showcasing your most written about topics or by giving you the control to decide which topics are front and center.
 
 **Demo: https://headline.ghost.io**

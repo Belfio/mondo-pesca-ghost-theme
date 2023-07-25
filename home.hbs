@@ -1,7 +1,7 @@
 {{!< default}}
-
 <main class="gh-main gh-outer">
     <div class="gh-inner">
+        
         <section class="gh-topic gh-topic-grid">
             <h2 class="gh-topic-name">
                 {{#match pagination.pages ">" 1}}
@@ -14,6 +14,7 @@
             <div class="gh-topic-content">
                 {{#foreach posts limit="7"}}
                     {{> "loop-grid"}}
+                        
                 {{/foreach}}
             </div>
 
@@ -27,6 +28,9 @@
         {{#if @custom.enter_tag_slugs_for_primary_sections}}
             {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_primary_sections}}]"}}
                 {{#foreach tags}}
+            <div id="top-pubb" style="">
+                <img src="http://makoedizioni.it/public/bannetintesta2019.gif" style="  height:40px; width: 460px; display:block; margin:auto; margin-top:2px;" />
+            </div>
                     {{> "topic-grid"}}
                 {{/foreach}}
             {{/get}}
