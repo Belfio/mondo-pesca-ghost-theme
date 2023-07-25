@@ -1,5 +1,8 @@
 {{!< default}}
 <main class="gh-main gh-outer">
+            <div id="top-pubb" style="">
+                <img src="http://www.sardegnapesca.it/immagini_sito/GIF-SITO.gif" style="  height:auto; width: 300px; display:block; margin:auto; margin-top:2px;" />
+        </div>
     <div class="gh-inner">
         
         <section class="gh-topic gh-topic-grid">
@@ -28,9 +31,10 @@
         {{#if @custom.enter_tag_slugs_for_primary_sections}}
             {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_primary_sections}}]"}}
                 {{#foreach tags}}
-            <div id="top-pubb" style="">
-                <img src="http://makoedizioni.it/public/bannetintesta2019.gif" style="  height:40px; width: 460px; display:block; margin:auto; margin-top:2px;" />
-            </div>
+                    <div id="section-pubb" style="">
+                        <img src="http://www.sardegnapesca.it/immagini_sito/GIF-SITO-{{name}}.gif" style="  height:auto; width: 300px; display:block; margin:auto; margin-top:2px;" />
+                    </div>
+                    
                     {{> "topic-grid"}}
                 {{/foreach}}
             {{/get}}

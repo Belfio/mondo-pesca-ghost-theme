@@ -692,8 +692,20 @@ body:not(.home-template) .gh-topic-grid .gh-card {
   display: block;
   z-index: 100;
   position: relative;
-  height: 42px;
+  height: auto;
   width: 100%;
+  margin-top: -72px;
+  margin-bottom: 0px;
+}
+
+#section-pubb {
+  display: block;
+  z-index: 100;
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 @media (max-width: 767px) {
@@ -817,7 +829,13 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     margin-top: 32px;
   }
   #top-pubb {
-    margin-top: 15px;
+    width: 80%;
+    margin: auto;
+    margin-top: -40px;
+  }
+  #section-pubb {
+    width: 80%;
+    margin: auto;
   }
   #gh-head .gh-head-brand {
     background-color: #24283f;
@@ -832,7 +850,13 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 @media (max-width: 991px) {
   #top-pubb {
-    margin-top: 24px;
+    width: 80%;
+    margin: auto;
+    margin-top: -40px;
+  }
+  #section-pubb {
+    width: 80%;
+    margin: auto;
   }
   .gh-topic-grid .gh-topic-content {
     grid-template-columns: 1fr;
