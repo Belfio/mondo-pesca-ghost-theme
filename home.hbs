@@ -1,7 +1,7 @@
 {{!< default}}
 <main class="gh-main gh-outer">
             <div id="top-pubb" style="">
-                <img src="http://www.sardegnapesca.it/immagini_sito/GIF-SITO.gif" style="  height:auto; width: 300px; display:block; margin:auto; margin-top:2px;" />
+                <img src="http://www.sardegnapesca.it/immagini_sito/GIF-SITO.gif" />
         </div>
     <div class="gh-inner">
         
@@ -31,8 +31,8 @@
         {{#if @custom.enter_tag_slugs_for_primary_sections}}
             {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_primary_sections}}]"}}
                 {{#foreach tags}}
-                    <div id="section-pubb" style="">
-                        <img src="http://www.sardegnapesca.it/immagini_sito/GIF-SITO-{{name}}.gif" style="  height:auto; width: 300px; display:block; margin:auto; margin-top:2px;" />
+                    <div id="section-pubb">
+                        <img src="http://www.sardegnapesca.it/immagini_sito/GIF-SITO-{{name}}.gif"  />
                     </div>
                     
                     {{> "topic-grid"}}

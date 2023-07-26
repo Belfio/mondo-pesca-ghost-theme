@@ -697,7 +697,13 @@ body:not(.home-template) .gh-topic-grid .gh-card {
   margin-top: -72px;
   margin-bottom: 0px;
 }
-
+#top-pubb img {
+  height: auto;
+  width: 380px;
+  display: block;
+  margin: auto;
+  margin-top: 2px;
+}
 #section-pubb {
   display: block;
   z-index: 100;
@@ -708,15 +714,21 @@ body:not(.home-template) .gh-topic-grid .gh-card {
   margin-bottom: 12px;
 }
 
+#section-pubb img {
+  height: auto;
+  width: 300px;
+  display: block;
+  margin: auto;
+  margin-top: 2px;
+}
+
 @media (max-width: 767px) {
   .gh-burger::before,
   .gh-burger::after {
     background-color: white;
     color: white;
   }
-  .gh-head-inner {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  }
+
   .gh-main {
     padding-top: 6.4rem;
     padding-bottom: 6.4rem;
