@@ -688,22 +688,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 }
 
 /* Media queries */
-#top-pubb {
-  display: block;
-  z-index: 100;
-  position: relative;
-  height: auto;
-  width: 100%;
-  margin-top: -72px;
-  margin-bottom: 0px;
-}
-#top-pubb img {
-  height: auto;
-  width: 380px;
-  display: block;
-  margin: auto;
-  margin-top: 2px;
-}
+
 #section-pubb {
   display: block;
   z-index: 100;
@@ -721,7 +706,85 @@ body:not(.home-template) .gh-topic-grid .gh-card {
   margin: auto;
   margin-top: 2px;
 }
+.nav-dropdown-content {
+  display: none;
+}
 
+.menuLabel {
+  font-weight: bold;
+  background-color: #24283f;
+
+  color: white;
+  width: 100%;
+  padding: 2rem 4rem;
+}
+
+.nav-dropdown-content {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 1);
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.nav-dropdown-content-column > ul {
+  padding: 2rem 4rem;
+}
+li {
+  list-style-type: none;
+}
+.nav-dropdown-content-column li {
+  padding: 0.2rem 0;
+}
+.nav-dropdown-content-column li:hover {
+  color: gray;
+  text-decoration: underline;
+}
+.nav-dropdown:hover > .nav-dropdown-content {
+  display: flex;
+}
+
+.nav-dropdown-content:hover {
+  display: flex;
+}
+
+.img-pub {
+  width: 220px;
+  padding: 0 0.5rem;
+  height: 100px;
+  margin: auto;
+}
+
+.img-sec-pub {
+  display: flex;
+  height: 100px;
+}
+
+#top-pubb {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.gh-main {
+  padding-top: 1rem;
+}
+.img-pub-link {
+  display: none;
+}
+#div-img-hero {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 2rem 0;
+  display: none;
+}
+#img-hero {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
 @media (max-width: 767px) {
   .gh-burger::before,
   .gh-burger::after {
@@ -730,11 +793,62 @@ body:not(.home-template) .gh-topic-grid .gh-card {
   }
 
   .gh-main {
-    padding-top: 6.4rem;
+    padding-top: 1rem;
     padding-bottom: 6.4rem;
   }
 
-  .gh-cover-content {
+  .img-sec-pub {
+    display: block;
+    margin: 1rem auto;
+    height: auto;
+  }
+
+  #top-pubb {
+    margin: 1rem auto;
+    height: auto;
+  }
+
+  .img-pub {
+    margin: auto;
+    padding-bottom: 0.5rem;
+    height: 100px;
+    width: auto;
+  }
+
+  .nav-dropdown-content {
+    display: block;
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 9999;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+  }
+  .nav-dropdown:hover > .nav-dropdown-content {
+    display: block;
+  }
+
+  .nav-dropdown-content:hover {
+    display: block;
+  }
+  .nav-dropdown {
+    text-align: center;
+  }
+
+  .nav-dropdown-content-column a {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .nav-dropdown-content-column > ul {
+    padding: 0.5rem;
+  }
+  #gh-head .nav-dropdown-content-column a {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .menuLabel {
+    display: none;
+  }
+
+  #top-pub .gh-cover-content {
     margin-top: 40px;
   }
 
@@ -840,15 +954,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
   .gh-copyright {
     margin-top: 32px;
   }
-  #top-pubb {
-    width: 80%;
-    margin: auto;
-    margin-top: -40px;
-  }
-  #section-pubb {
-    width: 80%;
-    margin: auto;
-  }
+
   #gh-head .gh-head-brand {
     background-color: #24283f;
   }
@@ -861,11 +967,6 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 }
 
 @media (max-width: 991px) {
-  #top-pubb {
-    width: 80%;
-    margin: auto;
-    margin-top: -40px;
-  }
   #section-pubb {
     width: 80%;
     margin: auto;
