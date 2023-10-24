@@ -769,7 +769,7 @@ li {
 }
 
 .gh-main {
-  padding-top: 1rem;
+  padding-top: 4rem;
 }
 .img-pub-link {
   display: none;
@@ -796,6 +796,11 @@ li {
   width: 100vw;
   top: 0;
 }
+
+.gh-head-additional-inner {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .gh-burger::before,
   .gh-burger::after {
@@ -804,7 +809,7 @@ li {
   }
 
   .gh-main {
-    padding-top: 1rem;
+    padding-top: 4rem;
     padding-bottom: 6.4rem;
   }
 
@@ -974,6 +979,7 @@ li {
   }
   .gh-head-additional-inner {
     margin-left: -20px;
+    display: block;
   }
 }
 
