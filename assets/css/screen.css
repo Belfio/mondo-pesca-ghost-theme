@@ -758,6 +758,7 @@ li {
 .img-sec-pub {
   display: flex;
   height: 100px;
+  justify-content: center;
 }
 
 #top-pubb {
@@ -777,13 +778,23 @@ li {
   width: 100%;
   height: auto;
   margin: auto;
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: none;
 }
 #img-hero {
   width: 100%;
   height: auto;
   margin: auto;
+}
+
+#gh-head-additional,
+.gh-head-additional {
+  background-color: #24283f;
+  position: absolute;
+  height: 80px;
+  background: #24283f;
+  width: 100vw;
+  top: 0;
 }
 @media (max-width: 767px) {
   .gh-burger::before,
@@ -955,8 +966,14 @@ li {
     margin-top: 32px;
   }
 
-  #gh-head .gh-head-brand {
+  #gh-head-additional,
+  .gh-head-additional {
     background-color: #24283f;
+    width: 100vw;
+    height: 70px;
+  }
+  .gh-head-additional-inner {
+    margin-left: -20px;
   }
 }
 
