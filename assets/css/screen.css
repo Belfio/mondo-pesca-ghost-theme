@@ -166,7 +166,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .gh-topic-grid .gh-card-wrapper {
@@ -750,14 +750,16 @@ li {
 
 .img-pub {
   width: auto;
-  padding: 0 0.5rem;
   height: 100px;
   margin: auto;
+  padding: 2rem;
 }
 
 .img-sec-pub {
-  display: flex;
-  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 1rem;
+  height: auto;
   justify-content: center;
 }
 
@@ -821,9 +823,11 @@ li {
   }
 
   .img-sec-pub {
-    display: block;
-    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 1rem;
     height: auto;
+    justify-content: center;
   }
 
   #top-pubb {
