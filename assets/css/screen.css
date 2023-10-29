@@ -749,7 +749,7 @@ li {
 }
 
 .img-pub {
-  width: 220px;
+  width: auto;
   padding: 0 0.5rem;
   height: 100px;
   margin: auto;
@@ -769,6 +769,10 @@ li {
 }
 
 .gh-main {
+  padding-top: 0rem;
+}
+
+.gh-main-page {
   padding-top: 4rem;
 }
 .img-pub-link {
@@ -809,8 +813,11 @@ li {
   }
 
   .gh-main {
-    padding-top: 4rem;
+    padding-top: 0rem;
     padding-bottom: 6.4rem;
+  }
+  .gh-main-page {
+    padding-top: 4rem;
   }
 
   .img-sec-pub {
@@ -827,7 +834,7 @@ li {
   .img-pub {
     margin: auto;
     padding-bottom: 0.5rem;
-    height: 100px;
+    height: 60px;
     width: auto;
   }
 
