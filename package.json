@@ -81,7 +81,7 @@
       },
       "email_signup_text": {
         "type": "text",
-        "default": "Non perderti le ultime news di pesca e nautica in Sardegna , solo su Mondo Pesca."
+        "default": "Non perderti le ultime news di pesca e nautica in Sardegna ,solo su Mondo Pesca."
       },
       "footer_text": {
         "type": "text"

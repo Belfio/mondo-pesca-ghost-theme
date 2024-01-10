@@ -109,6 +109,18 @@
                     <img id="img20" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
                 </a>
                 </div>
+                {{#get "tags" filter="slug:[meteo]"}}
+                {{#foreach tags}}
+                    
+                    {{> "topic-grid"}}
+                {{/foreach}}
+            {{/get}}
+            {{#get "tags" filter="slug:[ricette]"}}
+                {{#foreach tags}}
+                    
+                    {{> "topic-grid"}}
+                {{/foreach}}
+            {{/get}}
             {{#get "tags" filter="slug:[rivista]"}}
                 {{#foreach tags}}
                     
