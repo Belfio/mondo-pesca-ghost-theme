@@ -1,4 +1,8 @@
-<article class="gh-card {{post_class}}{{#match has_large_post "!=" false}}{{#has index="0"}} large{{/has}}{{/match}}">
+<article class="gh-card {{post_class}}{{#match has_large_post "!=" false}}{{#has index="0"}} large{{/has}} {{#has index="7"}} large{{/has}} {{/match}}">
+
+    {{#has index="7"}}
+        <div class="border-t border-light-gray mt-[16px] pt-[48px]"></div>
+    {{/has}}
     <a class="gh-card-link" href="{{url}}">
         {{#if feature_image}}
             <figure class="gh-card-image">
@@ -17,17 +21,15 @@
 
         <div class="gh-card-wrapper">
             <header class="gh-card-header">
-                <h3 class="gh-card-title">{{title}}</h3>
+                <h3 class="gh-card-title font-medium">{{title}}</h3>
             </header>
 
             {{#if excerpt}}
-                {{#is "home"}}
-                    {{#has index="0"}}
-                        <div class="gh-card-excerpt">{{excerpt}}</div>
-                    {{/has}}
-                {{else}}
+                {{#has index="0"}}
                     <div class="gh-card-excerpt">{{excerpt}}</div>
-                {{/is}}
+                {{else}}
+                <div class="gh-card-excerpt !text-sm">{{excerpt}}</div>
+                {{/has}}
             {{/if}}
 
             <footer class="gh-card-footer">

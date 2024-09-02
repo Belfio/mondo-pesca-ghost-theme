@@ -1,9 +1,10 @@
 {{!< default}}
 <main class="gh-main gh-outer">
-       <div id="div-img-hero">
+       {{!-- <div id="div-img-hero">
             <img id="img-hero" class="img-hero" src="https://www.mondopesca.it/content/images/2023/10/-PALLA-CAPPONE.jpg" />
-        </div>
-        <div id="top-pubb" class="img-sec-pub">
+        </div> --}}
+        
+        <div id="top-pubb" class="img-sec-pub mt-12">
                 <a id="img1-link" class="img-pub-link" href="mondopesca.it">
                     <img id="img1" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
                 </a>
@@ -22,14 +23,12 @@
 
         </div>
      
-    <div class="gh-inner">
-        
+    <div class="gh-inner mt-8">
         <section class="gh-topic gh-topic-grid">
-            <h2 class="gh-topic-name">
+            <h2 class="font-bold text-2xl uppercase my-8">
                 {{#match pagination.pages ">" 1}}
                     <a href="{{@site.url}}/page/2">Ultime notizie</a>
                 {{else}}
-                    
                 {{/match}}
             </h2>
 
@@ -62,12 +61,12 @@
                 <a id="img10-link" class="img-pub-link" href="mondopesca.it">
                     <img id="img10" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
                 </a>
-</div>
-            {{#get "tags" filter="slug:[pesca]"}}
-                {{#foreach tags}}
-                    {{> "topic-grid"}}
-                {{/foreach}}
-            {{/get}}
+        </div>
+        {{#get "tags" filter="slug:[pesca]"}}
+            {{#foreach tags}}
+                {{> "topic-double-grid"}}
+            {{/foreach}}
+        {{/get}}
         <div class="img-sec-pub">
 
             <a id="img11-link" class="img-pub-link" href="mondopesca.it">
@@ -109,7 +108,13 @@
                     <img id="img20" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
                 </a>
                 </div>
-                {{#get "tags" filter="slug:[meteo]"}}
+                {{!-- {{#get "tags" filter="slug:[meteo]"}}
+                {{#foreach tags}}
+                    
+                    {{> "topic-grid"}}
+                {{/foreach}}
+            {{/get}} --}}
+            {{#get "tags" filter="slug:[pescasub]"}}
                 {{#foreach tags}}
                     
                     {{> "topic-grid"}}
