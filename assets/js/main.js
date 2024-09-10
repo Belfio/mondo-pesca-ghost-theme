@@ -1,17 +1,21 @@
 (function () {
-    pagination(true);
+  pagination(true);
 })();
 
 (function () {
-    if (!document.body.classList.contains('post-template')) return;
+  if (!document.body.classList.contains("post-template")) return;
 
-    const cover = document.querySelector('.gh-cover');
-    if (!cover) return;
+  const cover = document.querySelector(".gh-cover");
+  if (!cover) return;
 
-    const image = cover.querySelector('.gh-cover-image');
+  const image = cover.querySelector(".gh-cover-image");
 
-    window.addEventListener('load', function () {
-        cover.style.setProperty('--cover-height', image.clientWidth * image.naturalHeight / image.naturalWidth + 'px');
-        cover.classList.remove('loading');
-    });
+  window.addEventListener("load", function () {
+    cover.style.setProperty(
+      "--cover-height",
+      // (image.clientWidth * image.naturalHeight) / image.naturalHeight + "px"
+      "70vh"
+    );
+    cover.classList.remove("loading");
+  });
 })();

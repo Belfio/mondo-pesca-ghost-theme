@@ -4,47 +4,36 @@
             <img id="img-hero" class="img-hero" src="https://www.mondopesca.it/content/images/2023/10/-PALLA-CAPPONE.jpg" />
         </div> --}}
         
-        <div id="top-pubb" class="img-sec-pub mt-12">
-                <a id="img1-link" class="img-pub-link" href="mondopesca.it">
-                    <img id="img1" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img2-link" class="img-pub-link" href="mondopesca.it">
-                    <img id="img2" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img3-link" class="img-pub-link" href="mondopesca.it">
-                    <img id="img3" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img4-link" class="img-pub-link" href="mondopesca.it">
-                    <img id="img4" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img5-link" class="img-pub-link" href="mondopesca.it">
-                    <img id="img5" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
+    <div id="top-pubb" class="img-sec-pub mt-12">
+            <a id="img1-link" class="img-pub-link" href="mondopesca.it">
+                <img id="img1" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img2-link" class="img-pub-link" href="mondopesca.it">
+                <img id="img2" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img3-link" class="img-pub-link" href="mondopesca.it">
+                <img id="img3" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img4-link" class="img-pub-link" href="mondopesca.it">
+                <img id="img4" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img5-link" class="img-pub-link" href="mondopesca.it">
+                <img id="img5" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
 
-        </div>
+    </div>
      
     <div class="gh-inner mt-8">
-        <section class="gh-topic gh-topic-grid">
-            <h2 class="font-bold text-2xl uppercase my-8">
-                {{#match pagination.pages ">" 1}}
-                    <a href="{{@site.url}}/page/2">Ultime notizie</a>
-                {{else}}
-                {{/match}}
-            </h2>
+        {{!-- <section class="gh-topic gh-topic-grid"> --}}
 
             <div class="gh-topic-content">
-                {{#foreach posts limit="7"}}
-                    {{> "loop-grid"}}
-                        
-                {{/foreach}}
+                        {{#get "tags" filter="slug:[news]"}}
+            {{#foreach tags}}                    
+                {{> "topic-grid"}}
+            {{/foreach}}
+        {{/get}}
             </div>
-
-            <footer class="gh-topic-footer">
-                {{#match pagination.pages ">" 1}}
-                    <a class="gh-topic-link" href="{{@site.url}}/page/2">Mostra altro {{> "icons/arrow"}}</a>
-                {{/match}}
-            </footer>
-        </section>
+        {{!-- </section> --}}
         <div class="img-sec-pub">
             <a id="img6-link" class="img-pub-link" href="mondopesca.it">
                     <img id="img6" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
@@ -84,13 +73,13 @@
                 <a id="img15-link" class="img-pub-link" href="mondopesca.it">
                     <img id="img15" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
                 </a>
-                </div>
+        </div>
 
-            {{#get "tags" filter="slug:[nautica]"}}
-                {{#foreach tags}}                    
-                    {{> "topic-grid"}}
-                {{/foreach}}
-            {{/get}}
+        {{#get "tags" filter="slug:[nautica]"}}
+            {{#foreach tags}}                    
+                {{> "topic-grid"}}
+            {{/foreach}}
+        {{/get}}
         <div class="img-sec-pub">
             <a id="img16-link" class="img-pub-link" href="mondopesca.it">
                     <img id="img16" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
@@ -175,4 +164,15 @@
             {{/match}}
         {{/if}}
     </div>
+    {{#if @custom.enter_tag_slugs_for_primary_sections}}
+    {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_primary_sections}}]"}}
+        {{#if tags}}
+            <div class="gh-topic-list">
+                {{#foreach tags}}
+                    {{> "topic-minimal"}}
+                {{/foreach}}
+            </div>
+        {{/if}}
+    {{/get}}
+{{/if}}
 </main>
