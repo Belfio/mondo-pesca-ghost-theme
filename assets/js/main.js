@@ -10,11 +10,13 @@
 
   const image = cover.querySelector(".gh-cover-image");
 
+  const isMobile = window.innerWidth < 768;
   window.addEventListener("load", function () {
     cover.style.setProperty(
       "--cover-height",
-      // (image.clientWidth * image.naturalHeight) / image.naturalHeight + "px"
-      "70vh"
+      isMobile
+        ? "80vh"
+        : (image.clientWidth * image.naturalHeight) / image.naturalHeight + "px"
     );
     cover.classList.remove("loading");
   });

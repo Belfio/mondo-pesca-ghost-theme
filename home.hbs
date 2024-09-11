@@ -26,13 +26,13 @@
     <div class="gh-inner mt-8">
         {{!-- <section class="gh-topic gh-topic-grid"> --}}
 
-            <div class="gh-topic-content">
-                        {{#get "tags" filter="slug:[news]"}}
+        <div class="gh-topic-content">
+        {{#get "tags" filter="slug:[news]"}}
             {{#foreach tags}}                    
                 {{> "topic-grid"}}
             {{/foreach}}
-        {{/get}}
-            </div>
+            {{/get}}
+        </div>
         {{!-- </section> --}}
         <div class="img-sec-pub">
             <a id="img6-link" class="img-pub-link" href="mondopesca.it">
