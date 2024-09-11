@@ -16,7 +16,7 @@
       "--cover-height",
       isMobile
         ? "80vh"
-        : (image.clientWidth * image.naturalHeight) / image.naturalHeight + "px"
+        : (image.clientWidth * image.naturalHeight) / image.naturalWidth + "px"
     );
     cover.classList.remove("loading");
   });
