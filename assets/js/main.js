@@ -15,7 +15,7 @@
     cover.style.setProperty(
       "--cover-height",
       isMobile
-        ? "80vh"
+        ? "auto"
         : (image.clientWidth * image.naturalHeight) / image.naturalWidth + "px"
     );
     cover.classList.remove("loading");
