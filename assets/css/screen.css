@@ -791,6 +791,7 @@ li {
   margin: auto;
   padding: 1rem 0;
   display: none;
+  max-width: 1200px;
 }
 #img-hero {
   width: 100%;

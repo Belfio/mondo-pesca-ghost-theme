@@ -1,0 +1,155 @@
+<script>
+  try {
+    // Mettere il link di una bella immagine tra gli apostrofi di imageHero per far comparire una immagine grande sotto il menu
+    // const imageHero =
+    //   "https://www.mondopesca.it/content/images/2024/09/GaraTrainaHonda.jpg";
+    // const imageHero ="https://brochures.honda.it/eventi/regolamento-honda-marine-cup-2024pdf/?page=1";
+    // Mettere il link di una immagine e il link di un sito tra gli apostrofi di ciascuno spazio pubblcitario
+
+    const d = {
+      //sezione pubblcità sopra "ultime notizie"
+      PUBBLICITA_1: {
+        IMMAGINE: "",
+        SITO: "",
+      },
+      PUBBLICITA_2: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2023/11/Cannon-1.jpg",
+        SITO: "https://fishing.kditaly.com/",
+      },
+      PUBBLICITA_3: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2023/10/HUMMINBIRD96.jpg",
+        SITO: "https://fishing.kditaly.com/",
+      },
+      PUBBLICITA_4: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2023/10/MINNKOTA96.jpg",
+        SITO: "https://fishing.kditaly.com/",
+      },
+      PUBBLICITA_5: {
+        IMMAGINE: "",
+        SITO: "",
+      },
+      //sezione pubblcità sopra "pesca"
+      PUBBLICITA_6: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2024/07/STONFO-220X100-144.jpg",
+        SITO: "https://stonfo.com/it/",
+      },
+      PUBBLICITA_7: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2023/11/garmin-220x100-96-bordato.jpg",
+        SITO: "https://www.garmin.com/it-IT/",
+      },
+      PUBBLICITA_8: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2024/07/ITALCANN-220X100-96-4.jpg",
+        SITO: "http://www.italcanna.com/index.asp",
+      },
+      PUBBLICITA_9: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2024/07/BORDERLINE.jpg",
+        SITO: "https://www.borderlinefishing.com/",
+      },
+      PUBBLICITA_10: {
+        IMMAGINE: "",
+        SITO: "",
+      },
+      //sezione pubblcità sopra "nautica"
+      PUBBLICITA_11: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2024/07/CORTIS-220X100-144.jpg",
+        SITO: "https://www.cortisnautica.it/",
+      },
+      PUBBLICITA_12: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2024/07/CONTINENTAL-MARINE.jpg",
+        SITO: "https://www.continentalmarine.it/",
+      },
+      PUBBLICITA_13: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2024/07/SARDINIA-RICAMBI.jpg",
+        SITO: "https://sardiniaricambi.it/contatti/",
+      },
+      PUBBLICITA_14: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2024/07/NURCHI-NAUTICA.jpg",
+        SITO: "https://www.facebook.com/centro.nautico/?locale=it_IT",
+      },
+      PUBBLICITA_15: {
+        IMMAGINE: "https://www.mondopesca.it/content/images/2024/07/PIRISI.jpg",
+        SITO: "https://www.nauticapirisi.it/",
+      },
+      //sezione pubblcità sopra "rivista"
+      PUBBLICITA_16: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2024/07/BOATNESS.jpg",
+        SITO: "https://boatness.it/",
+      },
+      PUBBLICITA_17: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2024/07/FIERA-NAUTICA-DI-SARDEGNA.jpg",
+        SITO: "https://www.fieranauticadisardegna.it/it/",
+      },
+      PUBBLICITA_18: {
+        IMMAGINE:
+          "https://www.mondopesca.it/content/images/2024/08/PESCARE-SHOW-2.jpg",
+        SITO: "https://www.pescareshow.it/it/media-gallery",
+      },
+      PUBBLICITA_19: {
+        IMMAGINE: "",
+        SITO: "",
+      },
+      PUBBLICITA_20: {
+        IMMAGINE: "",
+        SITO: "",
+      },
+      //sezione pubblcità sotto "rivis"
+      PUBBLICITA_21: {
+        IMMAGINE: "",
+        SITO: "",
+      },
+      PUBBLICITA_22: {
+        IMMAGINE: "",
+        SITO: "",
+      },
+      PUBBLICITA_23: {
+        IMMAGINE: "",
+        SITO: "",
+      },
+      PUBBLICITA_24: {
+        IMMAGINE: "",
+        SITO: "",
+      },
+      PUBBLICITA_25: {
+        IMMAGINE: "",
+        SITO: "",
+      },
+      // Non toccare nudda da qua in poi!!!
+    };
+
+    const hero = document.querySelector("#div-img-hero");
+    const heroImg = document.querySelector("#img-hero");
+    if (imageHero !== "") {
+      hero.style.display = "block";
+      heroImg.src = imageHero;
+    }
+
+    const keys = Object.keys(d);
+
+    keys.forEach((k, n) => {
+      if (d[k].IMMAGINE !== "") {
+        if (d[k].SITO !== "") {
+          const img1 = document.querySelector(`#img${n + 1}`);
+          const img1link = document.querySelector(`#img${n + 1}-link`);
+          img1.src = d[k].IMMAGINE;
+          img1link.href = d[k].SITO;
+          img1link.style.display = "block";
+        }
+      }
+    });
+  } catch (e) {
+    console.error("Mondopesca error:", e);
+  }
+</script>
