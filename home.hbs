@@ -1,11 +1,22 @@
-{{!< default}}
-<main class="gh-main gh-outer">
+{{!< default}} <main class="gh-main gh-outer">
     <div id="div-img-hero">
-        <a id="img-hero-link" class="img-hero-link" href="https://brochures.honda.it/eventi/regolamento-honda-marine-cup-2024pdf/?page=1" target="_blank">
-            <img id="img-hero" class="img-hero" src="https://www.mondopesca.it/content/images/2024/09/GaraTrainaOttobre_1200x620-1.jpg" />
+        <a id="img-hero-link" class="img-hero-link"
+            href="https://brochures.honda.it/eventi/regolamento-honda-marine-cup-2024pdf/?page=1" target="_blank">
+            <img id="img-hero" class="img-hero"
+                src="https://www.mondopesca.it/content/images/2024/09/GaraTrainaOttobre_1200x620-1.jpg" />
         </a>
     </div>
-        
+
+    <div id="div-video-hero">
+        <a id="video-hero-link" class="img-hero-link" href="https://www.mondopesca.it/" target="_blank">
+            <video id="video-hero" class="video-hero"
+                style="width: auto; height: auto; margin: auto; max-height: 480px;"
+                src="https://www.mondopesca.it/content/media/2025/08/Strike_BrandFilm_40seconds_2025--1-.mp4" controls
+                autoplay muted playsinline preload="metadata"></video>
+        </a>
+
+    </div>
+
     <div id="top-pubb" class="img-sec-pub mt-12 max-w-[1200px]">
         <a id="img1-link" class="img-pub-link" href="mondopesca.it" target="_blank">
             <img id="img1" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
@@ -23,167 +34,201 @@
             <img id="img5" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
         </a>
     </div>
-    <div id="third-pubb" class="img-third-pub mt-12 max-w-[1200px]" style="align-items: center; justify-content: center;   margin: auto;   text-align: center;">
-        <a id="img1-Mlink" class="img-pub-link w-[350px] hidden m-auto" href="mondopesca.it" target="_blank">
-            <img id="imgM1" class="img-Mpub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-        </a>
-        <a id="img2-Mlink" class="img-Mpub-link w-[350px] hidden m-auto" href="mondopesca.it" target="_blank">
-            <img id="imgM2" class="img-Mpub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-        </a>
-        <a id="img3-Mlink" class="img-Mpub-link w-[350px] hidden m-auto" href="mondopesca.it" target="_blank">
-            <img id="imgM3" class="img-Mpub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-        </a>
+    <div id="third-pubb" class="img-third-pub mt-12 grid grid-cols-3 gap-4 max-w-[1200px] mx-auto "
+        style="align-items: center; justify-content: center;      text-align: center;">
+        <div>
+            <a id="img1-Mlink" class="img-pub-link max-w-[350px] hidden m-auto justify-center items-center"
+                href="mondopesca.it" target="_blank">
+                <img id="imgM1" class="img-Mpub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+        </div>
+        <div>
+            <a id="img2-Mlink" class="img-Mpub-link max-w-[350px] hidden m-auto justify-center items-center"
+                href="mondopesca.it" target="_blank">
+                <img id="imgM2" class="img-Mpub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+        </div>
+        <div>
+            <a id="img3-Mlink" class="img-Mpub-link max-w-[350px] hidden m-auto justify-center items-center"
+                href="mondopesca.it" target="_blank">
+                <img id="imgM3" class="img-Mpub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+        </div>
     </div>
-     
+
     <div class="gh-inner mt-8">
         {{!-- <section class="gh-topic gh-topic-grid"> --}}
-        <div class="gh-topic-content">
-        {{#get "tags" filter="slug:[news]"}}
-            {{#foreach tags}}                    
+            <div class="gh-topic-content">
+                {{#get "tags" filter="slug:[news]"}}
+                {{#foreach tags}}
                 {{> "topic-grid"}}
-            {{/foreach}}
-            {{/get}}
-        </div>
-        {{!-- </section> --}}
+                {{/foreach}}
+                {{/get}}
+            </div>
+            {{!--
+        </section> --}}
         <div class="img-sec-pub">
-            <a id="img6-link" class="img-pub-link" href="mondopesca.it" target="_blank" >
-                    <img id="img6" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img7-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img7" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img8-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img8" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img9-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img9" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img10-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img10" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
+            <a id="img6-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img6" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img7-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img7" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img8-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img8" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img9-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img9" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img10-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img10" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
         </div>
         {{#get "tags" filter="slug:[pesca]"}}
-            {{#foreach tags}}
-                {{> "topic-double-grid"}}
-            {{/foreach}}
+        {{#foreach tags}}
+        {{> "topic-double-grid"}}
+        {{/foreach}}
         {{/get}}
         <div class="img-sec-pub">
 
             <a id="img11-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img11" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img12-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img12" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img13-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img13" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img14-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img14" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img15-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img15" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
+                <img id="img11" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img12-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img12" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img13-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img13" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img14-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img14" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img15-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img15" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
         </div>
 
         {{#get "tags" filter="slug:[nautica]"}}
-            {{#foreach tags}}                    
-                {{> "topic-grid"}}
-            {{/foreach}}
+        {{#foreach tags}}
+        {{> "topic-grid"}}
+        {{/foreach}}
         {{/get}}
         <div class="img-sec-pub">
             <a id="img16-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img16" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img17-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img17" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img18-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img18" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img19-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img19" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img20-link" class="img-pub-link" href="mondopesca.it" target="_blank">
-                    <img id="img20" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                </div>
-                {{!-- {{#get "tags" filter="slug:[meteo]"}}
-                {{#foreach tags}}
-                    
-                    {{> "topic-grid"}}
-                {{/foreach}}
-            {{/get}} --}}
-            {{#get "tags" filter="slug:[pescasub]"}}
-                {{#foreach tags}}
-                    
-                    {{> "topic-grid"}}
-                {{/foreach}}
-            {{/get}}
-            {{#get "tags" filter="slug:[ricette]"}}
-                {{#foreach tags}}
-                    
-                    {{> "topic-grid"}}
-                {{/foreach}}
-            {{/get}}
-            {{#get "tags" filter="slug:[rivista]"}}
-                {{#foreach tags}}
-                    
-                    {{> "topic-grid"}}
-                {{/foreach}}
-            {{/get}}
+                <img id="img16" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img17-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img17" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img18-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img18" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img19-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img19" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img20-link" class="img-pub-link" href="mondopesca.it" target="_blank">
+                <img id="img20" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+        </div>
+        {{!-- {{#get "tags" filter="slug:[meteo]"}}
+        {{#foreach tags}}
+
+        {{> "topic-grid"}}
+        {{/foreach}}
+        {{/get}} --}}
+        {{#get "tags" filter="slug:[pescasub]"}}
+        {{#foreach tags}}
+
+        {{> "topic-grid"}}
+        {{/foreach}}
+        {{/get}}
+        {{#get "tags" filter="slug:[ricette]"}}
+        {{#foreach tags}}
+
+        {{> "topic-grid"}}
+        {{/foreach}}
+        {{/get}}
+        {{#get "tags" filter="slug:[rivista]"}}
+        {{#foreach tags}}
+
+        {{> "topic-grid"}}
+        {{/foreach}}
+        {{/get}}
         <div class="img-sec-pub">
 
-                <a id="img21-link" class="img-pub-link" href="mondopesca.it">
-                    <img id="img21" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img22-link" class="img-pub-link" href="mondopesca.it">
-                    <img id="img22" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img23-link" class="img-pub-link" href="mondopesca.it">
-                    <img id="img23" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img24-link" class="img-pub-link" href="mondopesca.it">
-                    <img id="img24" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                <a id="img25-link" class="img-pub-link" href="mondopesca.it">
-                    <img id="img25" class="img-pub" src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
-                </a>
-                </div>
+            <a id="img21-link" class="img-pub-link" href="mondopesca.it">
+                <img id="img21" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img22-link" class="img-pub-link" href="mondopesca.it">
+                <img id="img22" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img23-link" class="img-pub-link" href="mondopesca.it">
+                <img id="img23" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img24-link" class="img-pub-link" href="mondopesca.it">
+                <img id="img24" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+            <a id="img25-link" class="img-pub-link" href="mondopesca.it">
+                <img id="img25" class="img-pub"
+                    src="https://www.mondopesca.it/content/images/2023/07/LOGO-MP-MINI-9.jpg" />
+            </a>
+        </div>
 
         {{#if @custom.enter_tag_slugs_for_secondary_sections}}
-            {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_secondary_sections}}]"}}
-                {{#if tags}}
-                    <div class="gh-topic-list">
-                        {{#foreach tags}}
-                            {{> "topic-minimal"}}
-                        {{/foreach}}
-                    </div>
-                {{/if}}
-            {{/get}}
+        {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_secondary_sections}}]"}}
+        {{#if tags}}
+        <div class="gh-topic-list">
+            {{#foreach tags}}
+            {{> "topic-minimal"}}
+            {{/foreach}}
+        </div>
+        {{/if}}
+        {{/get}}
         {{else}}
-            {{#match posts.length ">" 1}}
-                {{#get "tags" include="count.posts" order="count.posts desc"}}
-                    {{#if tags.[3]}}
-                        <div class="gh-topic-list">
-                            {{#foreach tags from="4" limit="3"}}
-                                {{> "topic-minimal"}}
-                            {{/foreach}}
-                        </div>
-                    {{/if}}
-                {{/get}}
-            {{/match}}
+        {{#match posts.length ">" 1}}
+        {{#get "tags" include="count.posts" order="count.posts desc"}}
+        {{#if tags.[3]}}
+        <div class="gh-topic-list">
+            {{#foreach tags from="4" limit="3"}}
+            {{> "topic-minimal"}}
+            {{/foreach}}
+        </div>
+        {{/if}}
+        {{/get}}
+        {{/match}}
         {{/if}}
     </div>
     {{#if @custom.enter_tag_slugs_for_primary_sections}}
     {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_primary_sections}}]"}}
-        {{#if tags}}
-            <div class="gh-topic-list">
-                {{#foreach tags}}
-                    {{> "topic-minimal"}}
-                {{/foreach}}
-            </div>
-        {{/if}}
+    {{#if tags}}
+    <div class="gh-topic-list">
+        {{#foreach tags}}
+        {{> "topic-minimal"}}
+        {{/foreach}}
+    </div>
+    {{/if}}
     {{/get}}
-{{/if}}
-</main>
+    {{/if}}
+    </main>
